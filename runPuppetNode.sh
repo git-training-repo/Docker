@@ -1,3 +1,3 @@
 #Running Puppet
 puppet agent --test
-echo "Container created"
+echo "Image created"
