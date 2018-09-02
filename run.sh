@@ -39,6 +39,13 @@ chmod +x iiq
 ./iiq schema
 echo "Create IIQ Schema"
 echo $PWD
+
+cd ..
+chmod 777 classes/*
+cd classes
+sed -i 's/dataSource.password=Qwerty12!/dataSource.password=1:iCAlakm5CVUe7+Q6hVJIBA==/g' iiq.properties
+
+echo $PWD
 cd ..
 cd database
 echo $PWD
