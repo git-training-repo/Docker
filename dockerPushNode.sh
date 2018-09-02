@@ -1,12 +1,12 @@
 #Pushing to docker hub
 #specify login credentials here(1)
-docker login -u="akshatjain4" -p="akshatjain4"
+docker login -u="veboddu" -p="Chinnu@30"
 #image name must be iiq
 imgid=$(docker images -q iiq)
 echo $imgid
 #specify login credentials here(2)
-docker tag $imgid akshatjain4/newtest:iiq
+docker tag $imgid veboddu/beatles:iiq
 #specify login credentials here(3)
-docker push akshatjain4/newtest
+docker push veboddu/beatles
 echo "Pushed to docker hub"
 
