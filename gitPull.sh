@@ -1,6 +1,9 @@
 cd /root
 mkdir tempdir
 cd tempdir
+#cleaning Repo
+sshpass -p "Qwerty12" ssh root@192.168.56.4 'bash /opt/DEVOPS/Docker/cleanRepoNode.sh'
+echo "Docker Push Job done"
 yum -y install sshpass
 git clone https://github.com/git-training-repo/Docker.git
 cd Docker
