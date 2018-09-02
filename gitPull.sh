@@ -9,6 +9,6 @@ do
   echo "$entry"
   sshpass -p "Qwerty12" scp $entry root@192.168.56.4:/opt/DEVOPS/Docker
 done
-cd /opt/DEVOPS/apache-tomcat-9.0.10/webapps/IIQ-home
+cd /opt/DEVOPS/Demo
 sshpass -p "Qwerty12" scp identityiq.war root@192.168.56.4:/opt/DEVOPS/Docker
 echo "Placed Files on Node, Job done"
